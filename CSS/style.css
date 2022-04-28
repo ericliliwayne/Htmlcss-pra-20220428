@@ -1,0 +1,103 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1024px;
+    height: 768px;
+    margin: auto;
+    /*background-color: blue;*/
+    margin: auto;
+}
+
+#top,#menu,#update,#marquee,#content,#footer{
+    border: 1px solid lightgray;
+}
+#top{
+    width: 1000px;
+    height: 65px;
+    /*background-color: lightblue;*/
+}
+#top>img{
+    margin: auto;
+}
+#aside{
+    display: flex;
+    flex-direction: column;
+    width: 215px;
+    height: calc(100% - 65px - 20px);
+    /*background-color: aliceblue;*/
+    
+}
+#menu{
+    flex-basis: calc(100% - 25px);
+    /*background-color: aqua;*/
+}
+#m1{
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    margin: 10px auto;
+    color: #ff00ff;
+    font-family: '標楷體';
+    text-align: center;
+}
+#m2{
+    font-family: '標楷體';
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+    width: 190px;
+    background-image: url(../images/menu1.png);
+    text-decoration: none;
+}
+#m2>a{
+    text-decoration: none;
+    color: #000;
+}
+#m2:hover{
+    background-image: url(../images/menu2.png);
+    font-size: larger;
+    font-weight: bold;
+}
+#update{
+    flex-basis: 25px;
+    font-size: 16px;
+    font-family: '標楷體';
+    color: #000;
+    text-align: center;
+    /*background-color: beige;*/
+}
+#section{
+    display: flex;
+    flex-direction: column;
+    width: calc(1000px - 215px);
+    /*background-color: lightgoldenrodyellow;*/
+    
+}
+#marquee{
+    flex-basis: 29px;
+    font-size: 24px;
+    font-family: '標楷體';
+    color: #0000ff;
+    padding: 1px;
+    /*background-color: lightgreen;*/
+}
+#content{
+    flex-basis: calc(100% - 29px);
+    /*background-color: lightpink;*/
+}
+#content>iframe{
+    width: 100%;
+    height: 100%;
+}
+#footer{
+    width: 1000px;
+    height: 20px;
+    font-size: 16px;
+    font-family: '標楷體';
+    color: #000;
+    text-align: center;
+    /*background-color: aquamarine;*/
+}
